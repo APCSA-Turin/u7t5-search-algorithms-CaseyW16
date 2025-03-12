@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.TestRepair" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-03-12T13:13:43" hostname="codespaces-b83a11" time="0.019">
+  <properties/>
+  <testcase name="testAddRepairPARTA()" classname="com.example.project.TestRepair" time="0.008"/>
+  <testcase name="testAvailableMechanicsPARTB()" classname="com.example.project.TestRepair" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

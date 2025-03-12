@@ -12,7 +12,8 @@ public class RepairSchedule {
      * Precondition: n >= 0
      */
     public RepairSchedule(int n) {
-        /* to be implemented in part (a) */
+        numberOfMechanics = n;
+        schedule = new ArrayList<CarRepair>();
     }
 
     public ArrayList<CarRepair> getSchedule() {
@@ -23,6 +24,11 @@ public class RepairSchedule {
      * Precondition: 0 <= m < numberOfMechanics and b >= 0
      */
     public boolean addRepair(int m, int b) {
+        for (CarRepair cr : schedule) {
+            if (cr.getMechanicNum() == m || cr.getBayNum() == b) return false;
+        }
+        CarRepair cr = new CarRepair(m, b);
+        schedule.add(cr);
         return true;
     }
 
@@ -30,7 +36,19 @@ public class RepairSchedule {
      * as described in part (b).
      */
     public ArrayList<Integer> availableMechanics() {
-        return new ArrayList<Integer>();
+        ArrayList<Integer> availableMechanics = new ArrayList();
+        for (int i = 0; i < numberOfMechanics; i++) {
+            availableMechanics.add(i);
+        }
+        for (CarRepair cr : schedule) {
+            for (int i = 0; i < availableMechanics.size(); i++) {
+                if (availableMechanics.get(i) == cr.getMechanicNum()) {
+                    availableMechanics.remove(i);
+                    break;
+                }
+            }
+        }
+        return availableMechanics;
     }
 
     /** Removes an element from schedule when a repair is complete.

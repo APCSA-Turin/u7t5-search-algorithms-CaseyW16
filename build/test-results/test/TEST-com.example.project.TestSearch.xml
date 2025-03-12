@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.TestSearch" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-03-12T13:13:43" hostname="codespaces-b83a11" time="0.106">
+  <properties/>
+  <testcase name="testLinearSearchFoundList()" classname="com.example.project.TestSearch" time="0.009"/>
+  <testcase name="testLinearSearchFirstArrayList()" classname="com.example.project.TestSearch" time="0.005"/>
+  <testcase name="testLinearSearchFoundArray()" classname="com.example.project.TestSearch" time="0.014"/>
+  <testcase name="testLinearSearchCountList()" classname="com.example.project.TestSearch" time="0.008"/>
+  <testcase name="testLinearSearchCountArray()" classname="com.example.project.TestSearch" time="0.003"/>
+  <testcase name="testLinearSearchLastArray()" classname="com.example.project.TestSearch" time="0.005"/>
+  <testcase name="testLinearSearchFirstArray()" classname="com.example.project.TestSearch" time="0.028"/>
+  <testcase name="testLinearSearchLastList()" classname="com.example.project.TestSearch" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
